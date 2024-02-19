@@ -6,8 +6,8 @@
 	--card-width: 63mm;
 	--card-bleed: 1mm;
 	--card-margin: 1mm;
-	--page-width: 21cm;
-	--page-height: 29.7cm;
+	--page-width: 297mm;
+	--page-height: 420mm;
 	--page-padding: 0.55cm;
 	--card-bgc: #161410;
 }
@@ -89,7 +89,7 @@ body {
 		width: fit-content;
 		height: fit-content;
 		grid-template-columns: repeat(
-			3,
+			6,
 			1fr
 		);
 		grid-template-rows: repeat(

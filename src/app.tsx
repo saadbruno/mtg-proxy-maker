@@ -142,13 +142,13 @@ export default function App() {
             {(card, j) => (
               <>
                 <div>
-                  {[0, 1, 2].includes(j() % 9) && <div class="print:mt-5" />}
+                  {[0, 1, 2,3,4,5].includes(j() % 18) && <div class="print:mt-5" />}
                   <CardComponent
                     card={card}
                     onClick={() => { setSelectedCardIndex(j()); }}
                     selected={j() == selectedCardIndex()}
                   />
-                  {j() % 9 == 8 && <div class="break-after-page" />}
+                  {j() % 18 == 17 && <div class="break-after-page" />}
                 </div>
                 {(j() % 9 != 8 && j() == cardList().value.length - 1) ?
                   [...new Array(8 - (j() % 9))].map((_, i) =>
